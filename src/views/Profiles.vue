@@ -1,9 +1,9 @@
 <template>
   <section>
-    <h2>關於</h2>
-    <img src="../assets/images/avatar_100x100.png" />
+    <h2 class="d-none d-print-block text-center">關於</h2>
+    <img class="rounded-circle float-right" src="../assets/images/avatar_100x100.png" />
     <article>
-      <h2>關於</h2>
+      <h3>關於</h3>
       <p>
         敝姓<u>林</u>，名<u>書緯</u>；<br/>
         表字<u><ruby>若虛<rt>Ruoshi</rt></ruby></u>，在網路上通常都以此自稱；<br/>
@@ -15,7 +15,7 @@
       </p>
     </article>
     <article>
-      <h2>現況</h2>
+      <h3>現況</h3>
       <p>
         正在尋找下一份有挑戰性的職缺。<br/>
       </p>

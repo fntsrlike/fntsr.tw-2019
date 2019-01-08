@@ -1,12 +1,7 @@
 <template>
-  <section>
-    <h3>{{item.name}}</h3>
-    <ul v-if="category === 'publication'">
-      <li v-if="item.responsibility">
-        負責： {{item.responsibility}}
-      </li><li v-if="item.date">
-        日期： {{item.date}}
-      </li><li v-if="item.publisher">
+  <div>
+    <ul v-if="type === 'publication'" class="list-unstyled">
+      <li v-if="item.publisher">
         出版： {{item.publisher}}
       </li><li v-if="item.url">
         網站： <a target="_blank" :href="item.url">{{item.url}}</a>
@@ -14,17 +9,10 @@
         原著： {{item.original}}
       </li>
     </ul>
-    <ul v-if="category === 'software'">
-      <li v-if="item.date">
-        起始於： {{item.date}}
-      </li><li v-if="item.source">
+    <development-badge :item="item" v-if="type === 'software'"></development-badge>
+    <ul v-if="type === 'software'" class="list-unstyled">
+      <li v-if="item.source">
         程式碼： <a target="_blank" :href="item.source">{{item.source}}</a>
-      </li><li v-if="item.languages">
-        程式語言： {{item.languages.join(', ')}}
-      </li><li v-if="item.frameworks">
-        框架： {{item.frameworks.join(', ')}}
-      </li><li v-if="item.libraries">
-        函式庫： {{item.libraries.join(', ')}}
       </li><li v-if="item.url">
         網站： <a target="_blank" :href="item.url">{{item.url}}</a>
       </li>
@@ -32,22 +20,27 @@
     <p v-for="paragraph in item.description" :key="paragraph">
       {{paragraph}}
     </p>
-    <div>
+    <div class="pt-1 pb-4" v-if="item.screenshots.length != 0">
       <a :href="requireImage(screenshot)" v-for="screenshot in item.screenshots" :key="screenshot">
-        <img class="screenshot" :src="requireImage(screenshot)"/>
+        <img class="screenshot border rounded" :src="requireImage(screenshot)"/>
       </a>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
+import DevelopmentBadges from '@/components/DevelopmentBadges.vue'
+
 export default {
   props: {
     item: Object,
-    category: {
+    type: {
       type: String,
       default: ''
     }
+  },
+  components: {
+    DevelopmentBadges
   },
   methods: {
     requireImage: function (imageName) {

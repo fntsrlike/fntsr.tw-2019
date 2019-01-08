@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2 class="page-title">作品</h2>
+    <h2 class="d-none d-print-block text-center">作品</h2>
     <section>
       <h3>目錄</h3>
       <ul>
@@ -41,55 +41,58 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h3>書籍</h3>
-      <portfolio-item class="block"
-        v-for="item in portfolioPublicationData"
-        category="publication" :item="item" :key="item.id">
-      </portfolio-item>
-    </section>
-    <section>
-      <h3>網路程式</h3>
-      <portfolio-item class="block"
-        v-for="item in portfolioWebData"
-        category="software" :item="item" :key="item.id">
-      </portfolio-item>
-    </section>
-    <section>
-      <h3>應用程式</h3>
-      <portfolio-item class="block"
-        v-for="item in portfolioAppData"
-        category="software" :item="item" :key="item.id">
-      </portfolio-item>
-    </section>
-    <section>
-      <h3>工具程式</h3>
-      <portfolio-item class="block"
-        v-for="item in portfolioUtilityData"
-        category="software" :item="item" :key="item.id">
-      </portfolio-item>
+    <section class="mb-5" v-for="category in categories" :key="category.name">
+      <h3 class="mb-3">{{category.name}}</h3>
+      <exp-item
+        v-for="item in category.data" :key="item.id"
+        :title="item.name" :subtitle="item.responsibility" :from="item.date">
+        <portfolio-item :type="category.type" :item="item">
+        </portfolio-item>
+      </exp-item>
     </section>
   </article>
 </template>
 
 <script>
+import ExpItem from '@/components/ExperienceItem.vue'
 import PortfolioItem from '@/components/PortfolioItem.vue'
 import PortfolioPublicationData from '@/data/PortfolioPublication.yaml'
 import PortfolioWebData from '@/data/PortfolioWeb.yaml'
 import PortfolioAppData from '@/data/PortfolioApp.yaml'
 import PortfolioUtilityData from '@/data/PortfolioUtility.yaml'
 
+const categories = [
+  {
+    name: '書籍',
+    type: 'publication',
+    data: PortfolioPublicationData
+  },
+  {
+    name: '網路程式',
+    type: 'software',
+    data: PortfolioWebData
+  },
+  {
+    name: '應用程式',
+    type: 'software',
+    data: PortfolioAppData
+  },
+  {
+    name: '工具程式',
+    type: 'software',
+    data: PortfolioUtilityData
+  }
+]
+
 export default {
   name: 'collections',
   components: {
+    ExpItem,
     PortfolioItem
   },
   data () {
     return {
-      portfolioPublicationData: PortfolioPublicationData,
-      portfolioWebData: PortfolioWebData,
-      portfolioAppData: PortfolioAppData,
-      portfolioUtilityData: PortfolioUtilityData
+      categories: categories
     }
   }
 }

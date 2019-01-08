@@ -38,7 +38,8 @@
   languages:
     - JavaScript
   frameworks:
-    - Vue.js 1.x, Firebase
+    - Vue.js 1.x
+    - Firebase
   description:
     - "這是一個用來宣導自殺防治的相關網站，案主的希望能有用成內容管理器，讓他們自行增修內容，但又不太希望負擔伺服器維護費用，所以這個專案我使用 GitHub Pages 作為 Host，搭配 Firebase 做為資料庫，以達成案主的需求。"
     - "案主在事後誇讚介面很好上手，讓他們行政人員不太需要花時間去學習，就能簡單的使用該網站。"
@@ -156,8 +157,7 @@
   url: http://class.lib.nchu.edu.tw/lib/order.php
   languages:
     - PHP
-  frameworks:
-    - none
+  frameworks: []
   description:
     - "空間借用也是很常見的內容管理專案程式，將空間借用的流程電子化，省去可以交由電腦審核的部分，並且搭配網路去控管空間的開關與使用。"
     - "在本專案主要是協助館方現有專案的維護與新增功能，也是本人的第一個案子，更是學習使用 PHP 的起點。雖然現在能力已經有辦法實作更好用的系統，但當初維護此系統，讓我入門的收益，是永遠無法抹滅的。"

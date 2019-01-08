@@ -1,0 +1,23 @@
+// Bootstrap breakpoints memo:
+//  - Small devices (landscape phones, 576px and up)
+//  - Medium devices (tablets, 768px and up)
+//  - Large devices (desktops, 992px and up)
+//  - Extra large devices (large desktops, 1200px and up)
+
+$container-max-widths: (
+  sm: 760px,
+  md: 820px,
+  lg: 880px,
+  xl: 920px
+);
+
+$content-max-widths: (
+  sm: 680px,
+  md: 700px,
+  lg: 720px,
+  xl: 740px
+);
+
+$color-yudubai: rgba(247, 247, 237, 0.3);
+
+$footer-height: 60px;

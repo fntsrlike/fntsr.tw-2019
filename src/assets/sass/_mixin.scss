@@ -1,0 +1,3 @@
+@function content-max-widths($breakpoint) {
+  @return map-get($content-max-widths, $breakpoint);
+}
