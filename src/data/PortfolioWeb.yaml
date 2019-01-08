@@ -1,0 +1,165 @@
+- id: nine-grids-judge
+  name: 九宮格審題系統
+  date: "1970-01-01"
+  source: https://github.com/fntsrlike/nine-grids-judge
+  url: http://compiler.oolab.fntsr.tw
+  languages:
+    - Ruby
+    - JavaScript
+    - HTML
+    - CSS
+  frameworks:
+    - Ruby on Rails
+    - SemanticUI
+  description:
+    - "一個用於翻轉教育的審題系統，由助教新建章節、題目，讓學生可以挑戰每一個章節中隨機產生的九道題目。提交的答案會交由助教審核是否通過，並給予建議。只要能讓位於九宮個的九道題目連成一條線，該章節就會通過。由於流程都電子化了，所以可以簡單整理出數據，幫助助教追蹤學生學習狀況，以及題目難易調整。"
+    - "概念由中央大學鄭永斌副教授提出，並應用在其教授的編譯器課程。目前正接受學生與助教的回饋，持續改進中。希望此專案未來穩定後，能推廣更多學校課程使用。"
+  screenshots:
+    - "web_nine_grids_1.png"
+    - "web_nine_grids_2.png"
+    - "web_nine_grids_3.png"
+    - "web_nine_grids_4.png"
+
+- id: ics2015
+  name: "論文投稿與審核系統"
+  date: "2015-07-24"
+  url: http://163.17.100.89
+  languages:
+    - Ruby
+  frameworks:
+    - Ruby on Rails
+  description:
+    - "本系統為「2016 運動生物力學研討會暨臺灣運動生物力學學會年會（ICS2015）」的論文投稿、審核系統，透過本系統得以讓要參與年會的教授與研究生投稿，再由管理員分配稿件給各相關領域的評審委員，最後在評審委員給出分數與評論後，交由管理員審核是否接受該篇論文，並通知投稿者審稿結果。"
+  screenshots: []
+
+- id: ncyu-life
+  name: 安心在嘉
+  date: "1970-01-01"
+  languages:
+    - JavaScript
+  frameworks:
+    - Vue.js 1.x, Firebase
+  description:
+    - "這是一個用來宣導自殺防治的相關網站，案主的希望能有用成內容管理器，讓他們自行增修內容，但又不太希望負擔伺服器維護費用，所以這個專案我使用 GitHub Pages 作為 Host，搭配 Firebase 做為資料庫，以達成案主的需求。"
+    - "案主在事後誇讚介面很好上手，讓他們行政人員不太需要花時間去學習，就能簡單的使用該網站。"
+  screenshots: []
+
+- id: meder_book
+  name: MeDer Book（臉書塗鴉牆解析再製程式）
+  date: "1970-01-01"
+  languages:
+    - Ruby
+  frameworks:
+    - Ruby on Rails
+  description: []
+  screenshots: []
+
+- id: morse-code
+  name: 摩斯電碼編解碼工具
+  date: "1970-01-01"
+  source: https://github.com/fntsrlike/morse.fntsr.tw
+  url: https://morse.fntsr.tw
+  languages:
+    - JavaScript
+  frameworks:
+    - Vue.js 1.x
+    - BULMA
+  libraries:
+    - RifeWave.js
+  description:
+    - Side Project
+  screenshots: []
+
+- id: npps-59-607
+  name: 內埔國小五十九屆六年庚班班級網頁 復刻版
+  date: "1970-01-01"
+  languages:
+    - JavaScript
+    - HTML
+    - CSS
+  frameworks: []
+  description:
+    - ""
+  screenshots: []
+
+- id: board-manger-system
+  name: 公佈欄管理系統
+  date: "1970-01-01"
+  source: https://github.com/fntsrlike/boards_manager
+  url: http://app.nchusg.org/poster_manager
+  languages:
+    - PHP
+  frameworks:
+    - Laravel
+  description:
+    - "海報公佈欄的管理，以往都是手動填表，然後人工評斷是否額度正常、重複申請等許多審核細節，若是稍有不慎，就會造成張貼單位重複、爭吵，更別體在審查的過程中，看著密密麻麻的列表，是多麽得耗時費力。於是寫出一個電子化的系統協助處理公佈欄張貼的勢，是本專案存在的目的。"
+    - "本專案目前使用在國立中興大學學生會，用來管理學生張貼海報相關事宜。"
+  screenshots:
+    - "web_sg_boards_1.jpg"
+
+- id: appeal-management-system
+  name: 案件管理系統
+  date: "1970-01-01"
+  url: https://github.com/fntsrlike/appeal_system
+  languages:
+    - PHP
+  frameworks:
+    - Laravel
+  description:
+    - "案件管理一直是滿常被提出的一種內容管理需求，雖然網路上已經有很多類似的專案，但細節盡不相同。而本專案偏向比較重個人、隱私性的方向，像是權利申訴、維修單回報等，屬於個人對組織的回報，但仍提供兩者持續性的溝通，並在解決後決定是否公開。"
+    - "本案件是為了學生會的學權申訴所寫，目前仍未上線。"
+  screenshots:
+    - "web_sg_appeal_1.jpg"
+
+- id: nchusg-official
+  name: NCHUSG Official Website (國立中興大學學生會網站)
+  date: "1970-01-01"
+  url: https://nchusg.org
+  languages:
+    - PHP
+  frameworks:
+    - Laravel
+  description:
+    - "一個學生會網站應該有什麼特色，要如何在一個粉絲專頁橫行的時代，凸顯官方網站的重要性與地位，這是當初任職學生會資訊長不斷思考的議題。以簡潔的設計，提供正式公告閱讀、行事曆與連絡資料，簡單卻重要的資訊。"
+    - "並且將官方網站定位成一個學生入口網站，以此為中心開發各式網路應用程式。例如以 Wordpress 搭配套件將公告放在官網上、提供各式學生 App 的連結，讓每項服務即App，單獨維護，卻又利用官網為中心的特性，彙整資料。"
+    - "目前此概念以作為學生會資訊部開發官網的方針，由後屆學弟妹持續維護中。"
+  screenshots:
+    - "web_sg_website_1.png"
+
+- id: business-statics-system
+  name: 業務統計系統
+  date: "1970-01-01"
+  languages:
+    - PHP
+  frameworks:
+    - Customize PHP MVC framework
+  description:
+    - "每年公家機管總是要統計各種資料，然後對使用者公佈。在以往的習慣中，以 Email 發送微軟的試算表檔案，由各單位填寫後回信，再交由總管單位去匯整，充斥的不便與瑣碎。本專案即為此需求所開發，由總管單位建立各單位必須填寫的欄位，然後每月定期填寫數據。在另外設計表格，去讀取該欄位的資料，不用會 SQL，只需使用簡單的 HTML 標籤與屬性，專案就會自動幫忙填寫，搞定一切。"
+    - "本專案用於國立中興大學圖書館中，為本人在旗下任職工讀生時所寫。現由圖書館資訊組做後續維護。"
+  screenshots:
+    - "web_lib_statistic_1.png"
+
+- id: book-search-system
+  name: 尋書系統
+  date: "1970-01-01"
+  languages:
+    - PHP
+  frameworks: []
+  description:
+    - "讀者在書架上找不到書，只好向櫃檯索取申請單，填寫相關資料，並由服務人員去追蹤。但這些流程有許多是程式可以取代的，一套尋書系統也是圖書館必備的網路應用程式，幫助圖書館主管去追蹤現有尋書狀況、進度，並且能讓讀者知道第一手的詢書訊息，增加官方與讀者的交流與信任。"
+    - "本專案主要是協助重構原本向其他單位交流所得的程式，改寫成現有單位適合的流程。且將原本重覆性極高的程式，轉換成函式與模組，增強重用性。"
+  screenshots: []
+
+- id: room-borrow-system
+  name: 研究小間、讀者討論室借用系統
+  date: "1970-01-01"
+  url: http://class.lib.nchu.edu.tw/lib/order.php
+  languages:
+    - PHP
+  frameworks:
+    - none
+  description:
+    - "空間借用也是很常見的內容管理專案程式，將空間借用的流程電子化，省去可以交由電腦審核的部分，並且搭配網路去控管空間的開關與使用。"
+    - "在本專案主要是協助館方現有專案的維護與新增功能，也是本人的第一個案子，更是學習使用 PHP 的起點。雖然現在能力已經有辦法實作更好用的系統，但當初維護此系統，讓我入門的收益，是永遠無法抹滅的。"
+  screenshots:
+    - "web_lib_room_1.png"

@@ -1,0 +1,22 @@
+# 作者(年代)。書名。出版地點:出版商。
+
+- id: "ISBN-9789864764877"
+  responsibility: "翻譯、審閱"
+  name: "第一次用 Docker 就上手"
+  date: "2017-08-29"
+  publisher: "碁峰資訊股份有限公司"
+  url: http://books.gotop.com.tw/v_ACA023400
+  original: "李金榜、尹燁、劉天斯、陳純 (2016)。循序漸進學Docker。北京：機械工業出版社。"
+  description:
+    - "本書原本為《循序漸進學 Docker》，是中國出版的書籍。碁峰資訊請我協助審校，將中國的慣用術語轉成台灣在地的慣用語。也因為原作出版已有段時間，Docker 在發展又算快速，裡面有許多資訊都過期了，在審校時我也協助修正這些過期的資訊。"
+  screenshots: []
+- id: "ISBN-9789864767946"
+  responsibility: "翻譯、審閱"
+  name: "白話深度學習與 TensorFlow"
+  date: "2018-07-30"
+  publisher: "碁峰資訊股份有限公司"
+  url: http://books.gotop.com.tw/v_ACD016300
+  original: "高揚、衛崢 (2017)。白話深度學習與 TensorFlow。北京：機械工業出版社。"
+  description:
+    - "本書秉持從「零」開始的初衷，介紹深度學習的技術與技巧，盡可能地將微積分、梯度等知識重點化整為零，降低學習門檻，適合對作為深度學習的入門參考書籍。"
+  screenshots: []

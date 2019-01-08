@@ -1,0 +1,38 @@
+- id: korat
+  name: "KORAT"
+  date: "1970-01-01"
+  languages:
+    - C#
+    - C++
+  frameworks:
+    - .Net Framework 4.5
+  description:
+    - ""
+  screenshots: []
+
+- id: isr2013
+  name: "Burning Civilization"
+  date: "1970-01-01"
+  languages:
+    - Lua
+  frameworks:
+    - Love
+  description:
+    - "這是參加 Indie Speed Run 2013 的作品，是以 Burning Civilization 為遊戲名稱、Camp Fire 為遊戲元素去製作的小型遊戲。這個專案是和 Raincole、Davy、mrjoshuachao 組成 Fludot 團隊去共同製作，在 30 小時內的時間進行黑客松，從抽題、發想、開發到完成，最後於活動尾聲時進行發表。"
+    - "這個專案是我第一次參加遊戲獨立製作的活動，也是第一次參加跨夜黑客松，要在短時間內針對抽到的題目進行遊戲製作是一項很有趣的挑戰，也在過程中學習如何團隊合作。從腦力激盪、繪製原型、分工開發，到後期的不斷測試、修正，都仰賴團隊之間彼此互相的幫忙，以及持續不斷的溝通與討論，這是一個很實用的經驗。"
+    - "在這個專案裡，mrjoshuachao 負責美術設計。我則和 Raincole、Davy 共同負責程式開發。在這次開發中，我從夥伴身上學到了如何開發一個遊戲的基礎知識，暸解到遊戲背後是如何運作的，以及該怎麼設計整個遊戲專案的架構、要有哪些類別與方法、要怎麼繪製與更新畫面等。從到完成一項作品，讓我感受到自己踏出了遊戲程式開發的第一步。"
+  screenshots:
+    - "app_burning_civilization_1.png"
+
+- id: nf-bbs
+  name: 國立文華高中 BBS 校站：新幻想領域
+  date: "1970-01-01"
+  languages:
+    - C
+  frameworks:
+    - Maple-Itoc
+  description:
+    - "對現在年輕人提及 BBS，大概已經一問三不知，除了 PTT 以外的 BBS 幾近沒落，但 BBS 卻是我高中以前，最活躍的網路平台，幾乎每個學校都會維護一個 BBS 站，也是許多人在學生時代的美好回憶。"
+    - "在我高一入學時，也是學校 BBS 站沒落且關閉的時期。任職於電研社社長的時候，就努力想嘗試在復站，最後在硬碟資料已經找不會的情況下放棄，但轉而重新架設一個的方向。最後終於在指考前三個月重新架起。儘管現在學校不再支持硬體去提供服務，但此專案也算是我在高中學習程式設計和系統管理的一個起點，也是讓我享受程設設計喜悅的開端。"
+  screenshots:
+    - "app_nf_1.png"

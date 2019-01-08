@@ -1,29 +1,40 @@
 <template>
-  <div id="app">
+  <div id="app" class="han-init">
+    <h1 class="website-title">
+      fntsr
+    </h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">關於</router-link> |
+      <router-link to="/hunting">求職</router-link> |
+      <router-link to="/cv">履歷</router-link> |
+      <router-link to="/achievements">成就</router-link> |
+      <router-link to="/skills">專業</router-link> |
+      <router-link to="/portfolios">作品</router-link>
     </div>
-    <router-view/>
+    <div id="view">
+      <router-view/>
+    </div>
+    <the-footer></the-footer>
   </div>
 </template>
 
+<script>
+import TheFooter from '@/components/TheFooter.vue'
+
+export default {
+  components: {
+    TheFooter
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  max-width: 768px;
+  margin: auto;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+.website-title {
+  text-align: center;
 }
 </style>

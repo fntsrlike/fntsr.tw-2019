@@ -1,0 +1,28 @@
+- id: sms-edu
+  name: 教育役各梯開缺解析工具
+  date: "2016-11-06"
+  source: https://github.com/fntsrlike/A-Ti-at-Schools
+  url: https://goo.gl/3CBxfw
+  languages:
+    - Ruby
+  frameworks: []
+  description:
+    - "這是用來解析教育替代役歷梯次有哪些學校有開缺的小工具，用來輔助推測最近又會有哪些學校有開缺，以方便準備事前學校情報的相關功課。"
+    - "這個小工具在我確定要服教育替代役時，利用成功嶺軍事訓練和教育役專業訓練之間的週末寫的。並將解析出來的 csv 檔轉成 Google Sheet，搭配其格式上色功能，完成一個較易閱讀的文件，讓我與同梯弟兄得以了解從 72 梯到 169 梯的開缺紀錄，也因此得以做足充分情報收集，選到自己偏好的服勤處所。"
+  screenshots:
+    - "utility_a-ti_1.png"
+
+- id: slack-irc-syncbot
+  name: Slack IRC 訊息同步機器人
+  date: "1970-01-01"
+  source: https://github.com/fntsrlike/slack-irc-syncbot
+  languages:
+    - JavaScript
+  frameworks:
+    - node.js
+  description:
+    - "Slack 是一個新興的團隊通訊平台、IRC 是一個歷史悠久無法放棄的聊天平台，兩種平台各有優劣，讓人無法取捨。此專案就是為了讓兩者能夠各展所長，因此寫了機器人同步兩邊的機器人，讓彼此的愛用者不必去遷就對方，仍可以互相溝通、討論。"
+    - "此專案目前運用在 CHILDISH、SDNDS-TW、PHP Taiwan Community，並持續中改進中。希望能藉由這個專案，讓前輩繼續慣用 IRC、新手快速入門 Slack 並進行雙方交流與討論。"
+  screenshots:
+    - "utility_sync_1.png"
+    - "utility_sync_2.png"
