@@ -1,5 +1,6 @@
 <template>
   <div>
+    <development-badges :item="item"></development-badges>
     <ul v-if="type === 'publication'" class="list-unstyled">
       <li v-if="item.publisher">
         出版： {{item.publisher}}
@@ -20,10 +21,12 @@
     <p v-for="paragraph in item.description" :key="paragraph">
       {{paragraph}}
     </p>
-    <div class="pt-1 pb-4" v-if="item.screenshots.length != 0">
-      <a :href="requireImage(screenshot)" v-for="screenshot in item.screenshots" :key="screenshot">
-        <img class="screenshot border rounded" :src="requireImage(screenshot)"/>
-      </a>
+    <div class="row text-center" v-if="item.screenshots.length != 0">
+      <div class="col col-8 col-sm-6 col-md-4 col-lg-3 py-3" v-for="screenshot in item.screenshots" :key="screenshot">
+        <a :href="requireImage(screenshot)">
+          <img class="screenshot border rounded" :src="requireImage(screenshot)"/>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -52,8 +55,6 @@ export default {
 
 <style lang="scss" scoped>
 .screenshot {
-  width: 150px;
-  height: 112.5px;
-  margin: 0 2px;
+  max-width: 100%;
 }
 </style>

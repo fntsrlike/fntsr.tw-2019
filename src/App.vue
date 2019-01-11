@@ -9,19 +9,19 @@
           <nav class="d-print-none">
             <ul class="nav justify-content-center">
               <li class="nav-item">
-                <router-link class="nav-link" to="/">關於</router-link>
+                <router-link class="nav-link px-2 px-sm-3" to="/">關於</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/cv">履歷</router-link>
+                <router-link class="nav-link px-2 px-sm-3" to="/skills">專業</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/achievements">成就</router-link>
+                <router-link class="nav-link px-2 px-sm-3" to="/cv">履歷</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/skills">專業</router-link>
+                <router-link class="nav-link px-2 px-sm-3" to="/achievements">成就</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/portfolios">作品</router-link>
+                <router-link class="nav-link px-2 px-sm-3" to="/portfolios">作品</router-link>
               </li>
             </ul>
           </nav>
@@ -36,7 +36,7 @@
         <div class="col">
           <footer class="text-center text-muted py-5">
             <time datetime="">
-              <small>最後更新：2018/12/31</small>
+              <small>最後更新：2019/01/11</small>
             </time>
           </footer>
         </div>
