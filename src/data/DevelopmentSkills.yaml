@@ -48,4 +48,4 @@
     - Docker
     - GitLab CI
   description:
-    - 有能力自己編寫 DockerFile，對於 Docker 的基礎概念也有一定的聊解，曾在 PHPConf 講過兩場推廣 Docker 的議程。自身也會使用 Docker 架設服務、建制環境等。在 Sharelike 時，也有透過 GitLab CI 為專案建置測試、建置、部署自動化的經驗。
+    - 有能力自己編寫 Dockerfile，對於 Docker 的基礎概念也有一定的聊解，曾在 PHPConf 講過兩場推廣 Docker 的議程。自身也會使用 Docker 架設服務、建制環境等。在 Sharelike 時，也有透過 GitLab CI 為專案建置測試、建置、部署自動化的經驗。
