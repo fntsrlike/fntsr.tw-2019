@@ -27,11 +27,11 @@
 <script>
 import ExpItem from '@/components/ExperienceItem.vue'
 import PortfolioItem from '@/components/PortfolioItem.vue'
-import PortfolioPublicationData from '@/data/PortfolioPublication.yaml'
-import PortfolioWebData from '@/data/PortfolioWeb.yaml'
-import PortfolioAppData from '@/data/PortfolioApp.yaml'
-import PortfolioGameData from '@/data/PortfolioGame.yaml'
-import PortfolioUtilityData from '@/data/PortfolioUtility.yaml'
+import PortfolioPublicationData from '@/assets/data/PortfolioPublication.yaml'
+import PortfolioWebData from '@/assets/data/PortfolioWeb.yaml'
+import PortfolioAppData from '@/assets/data/PortfolioApp.yaml'
+import PortfolioGameData from '@/assets/data/PortfolioGame.yaml'
+import PortfolioUtilityData from '@/assets/data/PortfolioUtility.yaml'
 
 const categories = [
   {

@@ -39,7 +39,7 @@
 
 <script>
 import DevelopmentBadges from '@/components/DevelopmentBadges.vue'
-import DevelopmentSkills from '@/data/DevelopmentSkills.yaml'
+import DevelopmentSkills from '@/assets/data/DevelopmentSkills.yaml'
 
 export default {
   name: 'skill',
