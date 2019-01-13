@@ -10,7 +10,6 @@
         原著： {{item.original}}
       </li>
     </ul>
-    <development-badge :item="item" v-if="type === 'software'"></development-badge>
     <ul v-if="type === 'software'" class="list-unstyled">
       <li v-if="item.source">
         程式碼： <a target="_blank" :href="item.source">{{item.source}}</a>
