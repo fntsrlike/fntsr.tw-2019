@@ -1,6 +1,6 @@
 <template>
   <article class="mt-1 mb-2" :class="isHeadlines ? 'text-body' : 'text-dark'" >
-    <div class="row" :title="`${from} ~ ${to}`">
+    <div class="row" :title="dateRangeText">
       <div class="col-12 col-md-1">
         <time :datetime="fromDate.format('YYYY-MM')" pubdate="pubdate">
           <p class="d-none d-md-block text-center">
@@ -8,7 +8,7 @@
             <small>{{fromDate.format('MMM')}}</small>
           </p>
           <span class="d-md-none text-black-50">
-            {{fromDate.format('YYYY/MM')}} ~ {{to ? toDate.format('YYYY/MM') : ''}}
+            {{dateRangeText}}
           </span>
         </time>
       </div>
@@ -62,13 +62,32 @@ export default {
     fromDate: function () {
       return moment(this.from, 'YYYY-MM')
     },
-    toDate: function () {
-      return moment(this.to, 'YYYY-MM')
+    fromDateText: function () {
+      return this.parseDateText(this.from)
+    },
+    toDateText: function () {
+      return this.parseDateText(this.to)
+    },
+    dateRangeText: function () {
+      if (!this.to) {
+        return this.fromDateText
+      }
+      return `${this.fromDateText} ~ ${this.toDateText}`
     }
   },
   methods: {
     toggleDetails: function () {
       this.isHidden = !this.isHidden
+    },
+    parseDateText: function (dateText) {
+      if (this.isDateValid(dateText)) {
+        return moment(dateText, 'YYYY-MM').format('YYYY-MM')
+      }
+      return dateText
+    },
+    isDateValid: function (dateText) {
+      return moment(dateText, 'YYYY-MM').isValid() ||
+        moment(dateText, 'YYYY-MM-DD').isValid()
     }
   }
 }
