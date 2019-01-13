@@ -2,15 +2,19 @@
   <article class="mt-1 mb-2" :class="isHeadlines ? 'text-body' : 'text-dark'" >
     <div class="row" :title="dateRangeText">
       <div class="col-12 col-md-1">
-        <time :datetime="fromDate.format('YYYY-MM')" pubdate="pubdate">
-          <p class="d-none d-md-block text-center">
-            {{fromDate.format('YYYY')}}<br/>
-            <small>{{fromDate.format('MMM')}}</small>
-          </p>
-          <span class="d-md-none text-black-50">
-            {{dateRangeText}}
-          </span>
-        </time>
+        <router-link class="text-decoration-none text-reset"
+          :to="{name: 'portfolios', hash: `#${anchorId}`}"
+          v-on:click.native="$emit('date-clicked', `#${anchorId}`)">
+          <time :datetime="fromDate.format('YYYY-MM')" pubdate="pubdate">
+            <p class="d-none d-md-block text-center">
+              {{fromDate.format('YYYY')}}<br/>
+              <small>{{fromDate.format('MMM')}}</small>
+            </p>
+            <span class="d-md-none text-black-50">
+              {{dateRangeText}}
+            </span>
+          </time>
+        </router-link>
       </div>
       <div class="col-12 col-md-11">
         <h4 class="pb-2" v-on:click="toggleDetails()">
@@ -36,6 +40,10 @@ export default {
   name: 'JobExp',
   props: {
     title: String,
+    anchorId: {
+      type: String,
+      default: ''
+    },
     subtitle: {
       type: String,
       default: ''
@@ -94,5 +102,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>
