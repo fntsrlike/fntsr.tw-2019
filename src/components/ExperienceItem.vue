@@ -1,7 +1,7 @@
 <template>
   <article class="mt-1 mb-2" :class="isHeadlines ? 'text-body' : 'text-dark'" >
-    <div class="row" :title="dateRangeText">
-      <div class="col-12 col-md-1">
+    <div class="row">
+      <div class="col-12 col-md-1" :title="dateRangeText">
         <router-link class="text-decoration-none text-reset"
           :to="{name: 'portfolios', hash: `#${anchorId}`}"
           v-on:click.native="$emit('date-clicked', `#${anchorId}`)">
