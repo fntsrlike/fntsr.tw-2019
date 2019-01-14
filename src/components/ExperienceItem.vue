@@ -17,8 +17,14 @@
         </router-link>
       </div>
       <div class="col-12 col-md-11">
-        <h4 class="pb-2" v-on:click="toggleDetails()">
-          {{title}}
+        <h4 class="pb-2">
+          <div class="small float-right clickable text-muted" v-on:click="toggleDetails()">
+            <font-awesome-icon :icon="['fas', 'plus']" v-if="isHidden"/>
+            <font-awesome-icon :icon="['fas', 'minus']" v-if="!isHidden"/>
+          </div>
+          <span>
+            {{title}}
+          </span>
           <small class="pt-2 d-block text-info" v-if="subtitle != ''">
             {{subtitle}}
           </small>
