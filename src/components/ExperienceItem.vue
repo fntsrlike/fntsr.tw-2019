@@ -22,14 +22,14 @@
             <font-awesome-icon :icon="['fas', 'plus']" v-if="isHidden"/>
             <font-awesome-icon :icon="['fas', 'minus']" v-if="!isHidden"/>
           </div>
-          <span>
+          <span :class="{'headline-title': isHeadlines}" >
             {{title}}
           </span>
-          <small class="pt-2 d-block text-info" v-if="subtitle != ''">
+          <small class="pt-2 d-block " :class="isHeadlines ? 'headline-subtitle' : 'text-info'" v-if="subtitle != ''">
             {{subtitle}}
           </small>
         </h4>
-        <div :class="[{ 'd-none': isHidden }]">
+        <div :class="[{ 'd-none': isHidden, 'headline-text': isHeadlines }]">
           <slot></slot>
         </div>
       </div>
@@ -108,4 +108,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.headline-title {
+  color: #c21f30;
+}
+
+.headline-subtitle {
+  color: #c04851;
+}
+
+.headline-text {
+  color: #592126;
+}
 </style>
