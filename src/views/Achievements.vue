@@ -47,7 +47,7 @@
         </li>
       </ul>
       <p>
-        在 2014 年講過 Docekr 的入們議題後，又過了一年，Docker 的生態系也漸成長，Machine、Compose、Swarm 皆趨於穩定、值得投入。本議程將承襲去年議程的概念，並講述如何透過這些工具利用 Docker 協助我們更方便的開發、測試、部署、遷移我們的 PHP 專案。
+        在 2014 年講過 Docker 的入門議題後，又過了一年，Docker 的生態系也逐漸成長成長起來，Machine、Compose、Swarm 等周邊服務皆趨於穩定、值得投入。本議程將承襲去年議程的概念，並講述如何透過這些工具利用 Docker 協助我們更方便的開發、測試、部署、遷移我們的 PHP 專案。
       </p>
       <image-gallery :images="['phpconf_2015_01.jpg', 'phpconf_2015_02.jpg']"></image-gallery>
       <p class="text-muted small">
