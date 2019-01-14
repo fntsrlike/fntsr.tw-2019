@@ -22,9 +22,7 @@
     </p>
     <div class="row text-center" v-if="item.screenshots.length != 0">
       <div class="col col-8 col-sm-6 col-md-4 col-lg-3 py-3" v-for="screenshot in item.screenshots" :key="screenshot">
-        <a :href="requireImage(screenshot)">
-          <img class="screenshot border rounded" :src="requireImage(screenshot)"/>
-        </a>
+        <fancy-box class="" :src="requireImage(screenshot)"/>
       </div>
     </div>
   </div>
@@ -32,6 +30,7 @@
 
 <script>
 import DevelopmentBadges from '@/components/DevelopmentBadges.vue'
+import FancyBox from '@/components/FancyBox.vue'
 
 export default {
   props: {
@@ -42,6 +41,7 @@ export default {
     }
   },
   components: {
+    FancyBox,
     DevelopmentBadges
   },
   methods: {
