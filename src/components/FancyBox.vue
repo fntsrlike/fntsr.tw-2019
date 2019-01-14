@@ -5,7 +5,9 @@
       @keyup.esc="handleBoxClick"
     />
     <div class="box" :class="{'d-flex align-items-center justify-content-center': isActive}">
-      <img class="box-image" :src="src"/>
+      <div class="image-box">
+        <img class="rounded border-secondary box-image" :src="src"/>
+      </div>
     </div>
   </div>
 </template>
@@ -67,12 +69,18 @@ export default {
     z-index: 1000;
     cursor: zoom-out;
 
-    .box-image {
-      cursor: zoom-out;
+    .image-box {
       will-change: width, height;
-      max-width: 80%;
-      max-height: 80%;
+      max-width: 90vh;
+      max-height: 90vh;
       z-index: 1001;
+      padding: 2em;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .box-image {
+      max-height: 80vh;
+      cursor: zoom-out;
     }
   }
 }

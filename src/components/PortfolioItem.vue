@@ -20,17 +20,13 @@
     <p v-for="paragraph in item.description" :key="paragraph">
       {{paragraph}}
     </p>
-    <div class="row text-center" v-if="item.screenshots.length != 0">
-      <div class="col col-8 col-sm-6 col-md-4 col-lg-3 py-3" v-for="screenshot in item.screenshots" :key="screenshot">
-        <fancy-box class="" :src="requireImage(screenshot)"/>
-      </div>
-    </div>
+    <image-gallery :images="item.screenshots"></image-gallery>
   </div>
 </template>
 
 <script>
 import DevelopmentBadges from '@/components/DevelopmentBadges.vue'
-import FancyBox from '@/components/FancyBox.vue'
+import ImageGallery from '@/components/ImageGallery.vue'
 
 export default {
   props: {
@@ -41,19 +37,11 @@ export default {
     }
   },
   components: {
-    FancyBox,
-    DevelopmentBadges
-  },
-  methods: {
-    requireImage: function (imageName) {
-      return require(`@/assets/images/${imageName}`)
-    }
+    DevelopmentBadges,
+    ImageGallery
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.screenshot {
-  max-width: 100%;
-}
 </style>
