@@ -54,7 +54,7 @@
       </p>
       <p>
         對於我過往的工作經歷，可以參見本站的<router-link to="/cv"><ruby>履歷<rt>CV</rt></ruby></router-link>頁面；<br/>
-        或是來信索取較為正式的<ruby>簡歷<rt>résumé</rt></ruby>檔案。<br/>
+        或是來信 work@fntsr.tw 索取較為正式的<ruby>簡歷<rt>résumé</rt></ruby>檔案。<br/>
       </p>
     </article>
   </section>
