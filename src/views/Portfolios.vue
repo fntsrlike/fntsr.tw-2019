@@ -39,6 +39,7 @@ import PortfolioWebData from '@/assets/data/PortfolioWeb.yaml'
 import PortfolioAppData from '@/assets/data/PortfolioApp.yaml'
 import PortfolioGameData from '@/assets/data/PortfolioGame.yaml'
 import PortfolioUtilityData from '@/assets/data/PortfolioUtility.yaml'
+
 const categories = [
   {
     id: 'publication',
