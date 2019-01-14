@@ -1,41 +1,6 @@
 <template>
   <section>
     <h2 class="d-none d-print-block text-center">履歷</h2>
-    <exp-item title="應徵" subtitle="ScrumMaster、程式設計師" :is-headlines="true" from="2019-01" to="至今">
-      <section>
-        <h5>方向</h5>
-        <section>
-          <h6>敏捷工作</h6>
-          <p>
-            目前偏好的工作環境是有導入敏捷精神的團隊，暸解並交流彼此對敏捷的看法與經驗。在這類團隊能接受擔任程式開發的職位，也願意延續擔任 ScrumMaster 的職涯。
-          </p>
-          <p>
-            也有興趣加入渴望導入敏捷或是正在嘗試的團隊，並且擔任該團隊的敏捷教練，引導團隊導入適合的敏捷方法。若是現況適合且希望能運行 Scrum，則擔任 ScrumMaster 一職。
-          </p>
-          <p>
-            由於這兩個方向都很看重團隊，希望面試時能安排和團隊交流的部分，讓彼此暸解對方是不是適合彼此。
-          </p>
-        </section>
-        <section>
-          <h6>程式開發</h6>
-          <p>
-            目前在網頁開發上前後端都有涉獵，有 PHP, Ruby, JavaScript (Node.js, Vue.js) 的開發經驗，在開發上傾向繼續深耕這些技術，但對於使用 C# 進行程式開發的工作也有興趣。
-          </p>
-          <p>
-            從大學時期就開始接案，協助案主釐清需求，並從零開始開發出一個可使用的應用程式，所以對於這方面的溝通也有一定的經驗。
-          </p>
-        </section>
-      </section>
-      <section>
-      <h5>地點與工作模式</h5>
-        <p>
-          若是需要緊密與團隊合作，工作地點偏好在台中。
-        </p>
-        <p>
-          在純開發且以個人開發為主的職缺上，偏好能夠遠端工作，並能接受定期去公司開重要會議，其餘溝通則以文字溝通為主，語音溝通為輔。自認擅長釐清需求並寫成規格，且已經有數次接案與實際遠端工作的經驗，因此在遠端合作上有一定的信心。
-        </p>
-      </section>
-    </exp-item>
     <exp-item title="享萊股份有限公司" subtitle="ScrumMaster" from="2017-12" to="2018-12"
       anchorPath="cv" anchor-id="cv-sharelike">
       <p>

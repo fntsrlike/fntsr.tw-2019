@@ -42,19 +42,29 @@
       </p>
 
     </article>
-    <article>
-      <h3>現況</h3>
+    <article class="mt-5">
+      <h4 class="pb-2 headline-title">
+        <span>
+          求職
+        </span>
+        <small class="pt-2 d-block">
+          ScrumMaster、程式設計師
+        </small>
+      </h4>
       <p>
-        正在尋找下一份有挑戰性的職缺。<br/>
+        我是個有七年程式開發經驗的程式設計師，也是個有成功為團隊導入敏捷文化與 Scrum 經驗的 ScrumMaster，日前於 <router-link :to="{name: 'achievements', hash: '#it-iron-2019'}">2019 年 iT 邦幫忙鐵人賽的 Agile 主題中獲得冠軍</router-link>，現在正在尋找下一份職缺。
       </p>
       <p>
-        在網頁程式開發領域約有七年資歷，<br/>
-        也有導入敏捷開發相關經驗，<br/>
-        目前對這兩方面的相關工作都有興趣。<br/>
+        下一份工作希望能延續 ScrumMaster 的經驗，繼續引導團隊，並和團隊一起成長。或是擔任 ScrumMaster，或是繼續擔任程式設計師，但是能有一群願意持續成長、進步的夥伴，和他們分享適合團隊當前文化的敏捷經驗與知識。也因為期望會和團隊夥伴有頻繁互動，希望面試的時候也能和團隊成員交流，暸解彼此的價值觀。
       </p>
       <p>
-        對於我過往的工作經歷，可以參見本站的<router-link to="/cv"><ruby>履歷<rt>CV</rt></ruby></router-link>頁面；<br/>
-        或是來信 work@fntsr.tw 索取較為正式的<ruby>簡歷<rt>résumé</rt></ruby>檔案。<br/>
+        在程式開發上，主要著重在網頁程式開發，並且以涉獵 PHP, Ruby, JavaScript (Node.js, Vue.js) 為主，在開發上傾向繼續深耕這些技術。另外，也有以 C# 進行視窗程式開發的經驗，並對於 C# 的相關專案或職缺也有興趣。
+      </p>
+      <p>
+        若地點與工作模式若是需要緊密與團隊合作，會比較偏好在台中工作。若是比較偏向個人開發的職缺，會希望能以遠端工作為主，並能接受定期去公司開重要會議。
+      </p>
+      <p>
+        對於我過往的工作經歷，可以參見本站的<router-link to="/cv"><ruby>履歷<rt>CV</rt></ruby></router-link>頁面；或是來信 work@fntsr.tw 索取較為正式的<ruby>簡歷<rt>résumé</rt></ruby>檔案。
       </p>
     </article>
   </section>
@@ -68,3 +78,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.headline-title {
+  color: #c21f30;
+
+  small {
+    color: #c04851;
+  }
+}
+
+</style>
