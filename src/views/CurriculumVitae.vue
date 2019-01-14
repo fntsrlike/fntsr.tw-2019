@@ -36,7 +36,8 @@
         </p>
       </section>
     </exp-item>
-    <exp-item title="享萊股份有限公司" subtitle="ScrumMaster" from="2017-12" to="2018-12">
+    <exp-item title="享萊股份有限公司" subtitle="ScrumMaster" from="2017-12" to="2018-12"
+      anchorPath="cv" anchor-id="cv-sharelike">
       <p>
         在職期間進行了約 10 次敏捷主題的內部分享，讓團隊能暸解敏捷精神，而不拘泥於形式。並主持過 13 次回顧、12 次檢視、11 次規劃會議，和團隊執行了約 16 次衝刺，並一起努力做出了以下改變：
       </p>
@@ -85,7 +86,8 @@
         在 2019 iT 邦幫忙鐵人賽中，將與團隊共事所獲得的經驗與心得，寫成系列文《為團隊與組織導入敏捷的經驗分享》，受到評審團的肯定成為 Agile 主題的冠軍。這一年的經歷以及受到的肯定，也讓我對繼續擔任同性質職位感到自信，並期望在未來能繼續往這個方向前進。
       </p>
     </exp-item>
-    <exp-item title="軟體工程碩士 @ 國立中央大學"  from="2014-09" to="2016-08">
+    <exp-item title="軟體工程碩士 @ 國立中央大學"  from="2014-09" to="2016-08"
+      anchorPath="cv" anchor-id="cv-ncu">
       <p>
         在有了大學的實際開發經驗後，除了引起對軟體開發濃厚的興趣，也開始對許多軟體開發的議題有著種種困惑與撞牆，有感於於此，決定進修軟體開發相關的碩士學程，這時國立中央大學軟體工程碩士班以獨特的招生方式引起我的注意，並決定投身於此，最後成功取的入學資格，並開始學習軟體工程領域，期望能解決我經驗中所遇到的困境與疑惑。
       </p>
@@ -106,7 +108,8 @@
         </li>
       </ul>
     </exp-item>
-    <exp-item title="接案" from="2014-09" to="至今">
+    <exp-item title="接案" from="2014-09" to="至今"
+      anchorPath="cv" anchor-id="cv-cases">
       <p>
         經過大學時期的磨練、以及兩個月在職場上的實習，對程式開發與資訊技術有著一定的暸解，透過朋友的介紹以及前輩的推薦，也開始進行兼職，或是專案開發、或是書籍審閱，詳細可參見作品集中的介紹。
       </p>
@@ -124,12 +127,14 @@
         </li>
       </ul>
     </exp-item>
-    <exp-item title="暑期實習 @ EZTABLE" from="2014-07" to="2014-08">
+    <exp-item title="暑期實習 @ EZTABLE" from="2014-07" to="2014-08"
+      anchorPath="cv" anchor-id="cv-eztable">
       <p>
         在實習期間直接參與 Core Team 的開發，並接觸了每日會議、完善的團隊協作流程，包括 Git Flow 、Code Review。也被鼓勵研究新技術，改善公司新人開發環境建置成本過高的問題，從那時開始研究 Docker，並在公司內部進行相關主題分享。
       </p>
     </exp-item>
-    <exp-item title="歷史學學士 @ 國立中興大學 " from="2010-09" to="2014-06">
+    <exp-item title="歷史學學士 @ 國立中興大學 " from="2010-09" to="2014-06"
+      anchorPath="cv" anchor-id="cv-nchu">
       <p>
         就讀歷史學這四年，經過必須研讀多份史料、撰寫報告、以及在考試進行申論，在資料處理、語文表達、邏輯思考上得到許多歷練，並習慣看待事情會去重視整個脈絡、全局觀。也由於歷史的多元性，讓我看待事情習慣會有不同視角，去尊重不同的聲音，並懂得質疑、批判既有的觀點，而不會單方面、不經思考的吸收有爭議的資訊。雖然外界常基於沒有生存技能去質疑本科系存在的必要性，但是事實上透過進修歷史學所獲得的成長是內化的、受用無窮的，我很高興自己投資人生的四年就讀，並以身為歷史系學生為傲。
       </p>
@@ -157,10 +162,14 @@
 </template>
 
 <script>
+import ScrollToMountedMixin from '@/mixins/scrollToMounted.js'
 import ExpItem from '@/components/ExperienceItem.vue'
 
 export default {
   name: 'cv',
+  mixins: [
+    ScrollToMountedMixin
+  ],
   components: {
     ExpItem
   },
@@ -239,6 +248,15 @@ export default {
         ]
       }
     }
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      if (this.$route.hash !== '') {
+        setTimeout(() => {
+          this.$scrollTo(this.$route.hash)
+        }, 500)
+      }
+    })
   }
 }
 </script>

@@ -38,11 +38,15 @@
 </template>
 
 <script>
+import ScrollToMountedMixin from '@/mixins/scrollToMounted.js'
 import DevelopmentBadges from '@/components/DevelopmentBadges.vue'
 import DevelopmentSkills from '@/assets/data/DevelopmentSkills.yaml'
 
 export default {
   name: 'skill',
+  mixins: [
+    ScrollToMountedMixin
+  ],
   components: {
     DevelopmentBadges
   },

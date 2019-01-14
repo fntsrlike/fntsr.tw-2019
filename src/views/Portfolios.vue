@@ -10,7 +10,7 @@
             <li class="clickable" v-for="item in category.data" :key="item.id">
               <router-link class="text-decoration-none text-reset"
                 :to="{name: 'portfolios', hash: `#${category.id}-${item.id}`}"
-                v-on:click.native="updateRouteHistory(`#${category.id}-${item.id}`)">
+                v-on:click.native="scrollTo(`#${category.id}-${item.id}`)">
                 {{item.name}}
               </router-link >
             </li>
@@ -20,10 +20,9 @@
     </section>
     <section class="mb-5" v-for="category in categories" :key="category.name">
       <h3 class="mb-3">{{category.name}}</h3>
-      <exp-item :id="`${category.id}-${item.id}`" :anchor-id="`${category.id}-${item.id}`"
+      <exp-item anchorPath="portfolios" :anchor-id="`${category.id}-${item.id}`"
         v-for="item in category.data" :key="item.id"
-        :title="item.name" :subtitle="item.responsibility" :from="item.date"
-        v-on:date-clicked="updateRouteHistory">
+        :title="item.name" :subtitle="item.responsibility" :from="item.date">
         <portfolio-item :type="category.type" :item="item">
         </portfolio-item>
       </exp-item>
@@ -32,6 +31,8 @@
 </template>
 
 <script>
+import ScrollToMountedMixin from '@/mixins/scrollToMounted.js'
+import ScrollToMethodMixin from '@/mixins/scrollToMethod.js'
 import ExpItem from '@/components/ExperienceItem.vue'
 import PortfolioItem from '@/components/PortfolioItem.vue'
 import PortfolioPublicationData from '@/assets/data/PortfolioPublication.yaml'
@@ -75,6 +76,10 @@ const categories = [
 
 export default {
   name: 'collections',
+  mixins: [
+    ScrollToMountedMixin,
+    ScrollToMethodMixin
+  ],
   components: {
     ExpItem,
     PortfolioItem
@@ -82,22 +87,6 @@ export default {
   data () {
     return {
       categories: categories
-    }
-  },
-  mounted: function () {
-    this.$nextTick(function () {
-      if (this.$route.hash !== '') {
-        setTimeout(() => {
-          this.$scrollTo(this.$route.hash)
-        }, 500)
-      }
-    })
-  },
-  methods: {
-    updateRouteHistory (hash) {
-      console.log(hash)
-      this.$scrollTo(hash)
-      this.$router.push({ name: 'portfolios', hash: hash })
     }
   }
 }

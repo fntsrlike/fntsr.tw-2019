@@ -1,10 +1,10 @@
 <template>
-  <article class="mt-1 mb-2" :class="isHeadlines ? 'text-body' : 'text-dark'" >
+  <article :id="anchorId" class="mt-1 mb-2" :class="isHeadlines ? 'text-body' : 'text-dark'" >
     <div class="row">
       <div class="col-12 col-md-1" :title="dateRangeText">
         <router-link class="text-decoration-none text-reset"
-          :to="{name: 'portfolios', hash: `#${anchorId}`}"
-          v-on:click.native="$emit('date-clicked', `#${anchorId}`)">
+          :to="{name: anchorPath, hash: `#${anchorId}`}"
+          v-on:click.native="scrollTo(`#${anchorId}`)">
           <time :datetime="fromDate.format('YYYY-MM')" pubdate="pubdate">
             <p class="d-none d-md-block text-center">
               {{fromDate.format('YYYY')}}<br/>
@@ -38,14 +38,22 @@
 </template>
 
 <script>
+import ScrollToMethodMixin from '@/mixins/scrollToMethod.js'
 import moment from 'moment'
 
 moment.locale('zh-TW')
 
 export default {
   name: 'JobExp',
+  mixins: [
+    ScrollToMethodMixin
+  ],
   props: {
     title: String,
+    anchorPath: {
+      type: String,
+      default: ''
+    },
     anchorId: {
       type: String,
       default: ''
@@ -102,6 +110,10 @@ export default {
     isDateValid: function (dateText) {
       return moment(dateText, 'YYYY-MM').isValid() ||
         moment(dateText, 'YYYY-MM-DD').isValid()
+    },
+    scrollTo: function (hash) {
+      this.$scrollTo(hash)
+      this.$router.push({ hash: hash })
     }
   }
 }

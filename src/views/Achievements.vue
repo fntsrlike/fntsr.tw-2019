@@ -1,7 +1,8 @@
 <template>
   <section>
     <h2 class="d-none d-print-block text-center">成就</h2>
-    <exp-item title="第十屆 iT 邦幫忙鐵人賽" subtitle="Agile 主題分組冠軍獎" from="2019-01">
+    <exp-item title="第十屆 iT 邦幫忙鐵人賽" subtitle="Agile 主題分組冠軍獎" from="2019-01"
+      anchorPath="achievements" anchor-id="it-iron-2019">
       <p>
         iT 邦幫忙鐵人賽是一項必須挑戰在 iT 邦幫忙上連續 30 天發表技術文章不中斷的賽事。賽事會分為數個相關主題，並在每個主題中的眾多參賽者裡選出一個冠軍、不分組別選出數位優選、佳作，也給予成功挑戰 30 天比賽不中斷的參賽者「鐵人鍊成獎」。
       </p>
@@ -33,7 +34,8 @@
         部分圖片來源為 <a class="text-reset" href="https://www.facebook.com/annisgu/posts/10156419712344081" target="_blank">Facebook - 谷祖惠（動態時報）</a>。
       </p>
     </exp-item>
-    <exp-item title="PHPConf 2015" subtitle="講師" from="2015-10">
+    <exp-item title="PHPConf 2015" subtitle="講師" from="2015-10"
+      anchorPath="achievements" anchor-id="phpconf-tw-2015">
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="https://www.youtube.com/watch?v=B0Xw38EkFf8&feature=youtu.be" target="_blank">
@@ -54,7 +56,8 @@
         圖片來源為 PHPConf Taiwan 的 <a class="text-reset" href="https://www.flickr.com/photos/phpconf/sets/72157660184673611/" target="_blank">Flickr 相簿</a>。
       </p>
     </exp-item>
-    <exp-item title="第一屆芬安全資安競賽：獵駭行動" subtitle="第一名" from="2014-12">
+    <exp-item title="第一屆芬安全資安競賽：獵駭行動" subtitle="第一名" from="2014-12"
+      anchorPath="achievements" anchor-id="fsecure">
       <p>
         F-Secure 舉辦的「資訊安全競賽：獵駭行動」是一個以程式遊戲及機智問答的方式進行的賽事。在就讀碩士期間，與友人楊安傑、蔡維泰組成「admin'--」隊伍參賽，獲得了該賽事的第一名。
       </p>
@@ -63,7 +66,8 @@
         圖片來源為 T 客邦報導 <a class="text-reset" href="https://www.techbang.com/posts/21518-finnish-security-hunting-horror-action" target="_blank">〈芬安全首屆「獵駭行動」，希望帶動台灣資安與國際接軌〉</a>。
       </p>
     </exp-item>
-    <exp-item title="PHPConf 2014" subtitle="講師" from="2014-10">
+    <exp-item title="PHPConf 2014" subtitle="講師" from="2014-10"
+      anchorPath="achievements" anchor-id="phpconf-tw-2014">
       <p>
         <ul class="list-inline">
           <li class="list-inline-item">
@@ -82,7 +86,8 @@
         Docker 是這一年來虛擬化環境的新秀，以 LXC 技術展現輕量型虛擬化，並且擁有自動建構、版本控制的特性，配合 Docker hub 平台，讓我們能夠快速部署伺服器環境與專案。而這個連 Google、Red Hat 都很是重視的 LXC 管理工具，該如何運用在PHP的專案上呢？就讓我們一探究竟吧！
       </p>
     </exp-item>
-    <exp-item title="第九屆創業週末・台中場" subtitle="第四名" from="2013-11">
+    <exp-item title="第九屆創業週末・台中場" subtitle="第四名" from="2013-11"
+      anchorPath="achievements" anchor-id="startup-weekend-2013">
       <p>
         創業週末是一個要在 54 小時內建立一家新創公司的競賽活動，要在這不到三天的時間內發表想法、組隊、討論、建立原型，最後呈現一個完整的創業計畫，最後由評審針對簡報與團隊進行評比。
       </p>
@@ -94,14 +99,27 @@
 </template>
 
 <script>
+import ScrollToMountedMixin from '@/mixins/scrollToMounted.js'
 import ExpItem from '@/components/ExperienceItem.vue'
 import ImageGallery from '@/components/ImageGallery.vue'
 
 export default {
   name: 'archievement',
+  mixins: [
+    ScrollToMountedMixin
+  ],
   components: {
     ExpItem,
     ImageGallery
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      if (this.$route.hash !== '') {
+        setTimeout(() => {
+          this.$scrollTo(this.$route.hash)
+        }, 500)
+      }
+    })
   }
 }
 </script>
