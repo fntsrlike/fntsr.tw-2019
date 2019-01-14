@@ -1,4 +1,4 @@
-- id: project_808
+- id: project-808
   name: 專案 808
   responsibility: 原型製作
   date: "2018-12-18"
@@ -17,7 +17,7 @@
     - 本次開發主要是為案主建立一個 PWA 原型，並且為其需求設計容易擴展內容的架構，並且導入 GitLab CI，讓案主在未來需要自行開發或是找人接手時，能夠簡單就將產品部署上線，必且把持產品的基本品質。
   screenshots: []
 
-- id: meder_book
+- id: meder-book
   name: Facebook 塗鴉牆解析再製程式
   responsibility: 原型製作
   date: "2016-12-29"

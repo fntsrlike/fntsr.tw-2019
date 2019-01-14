@@ -95,25 +95,34 @@
       <p>
         亦曾幫助指導教授推廣新式教育，協助將原本繁冗的紙本流程轉成基於 Ruby on Rails 的九宮格審題系統，讓選修課程的學生能在看完老師事先錄好的教學影片後，在電腦教室或是遠端進行答題，也讓助教可以遠端協助答題批改。並且不斷針對每一堂課收到的回饋進行改進，讓本套系統的操作流程更加順暢以及公平。本套系統仍有持續在該課程中使用。
       </p>
-      <ul>
-        <li>KORAT</li>
-        <li>九宮格審題系</li>
+      <p>
+        這時期參與的專案與相關作品：
+      </p>
+       <ul>
+        <li v-for="portfolio in portfolios['ncu']" :key="portfolio.id">
+          <router-link class="text-decoration-none" :to="{name: 'portfolios', hash: `#${portfolio.id}`}">
+            {{portfolio.name}}
+          </router-link>
+        </li>
       </ul>
     </exp-item>
     <exp-item title="接案" from="2014-09" to="至今">
       <p>
-        經過大學時期的磨練、以及兩個月在職場上的實習，對程式開發與資訊技術有著一定的暸解，透過朋友的介紹以及前輩的推薦，也開始進行兼職，期間包含以下案件，詳細可參見作品集中的介紹：
+        經過大學時期的磨練、以及兩個月在職場上的實習，對程式開發與資訊技術有著一定的暸解，透過朋友的介紹以及前輩的推薦，也開始進行兼職，或是專案開發、或是書籍審閱，詳細可參見作品集中的介紹。
       </p>
-      <ul>
-        <li>審校《白話深度學習與 TensorFlow》</li>
-        <li>審校《第一次用Docker就上手》</li>
-        <li>論文投稿與審核系統</li>
-        <li>安心在嘉</li>
-        <li>MQTT</li>
-      </ul>
       <p>
         在承接程式開發相關的案件時，也讓我得到與客戶直接、間接溝通的寶貴經驗，暸解客戶與工程師的溝通之間會出現哪些困境，並如何協助客戶歸納需求、問題，確保開發出來的產品是客戶需要的。
       </p>
+      <p>
+        這時期參與的專案與相關作品：
+      </p>
+      <ul>
+        <li v-for="portfolio in portfolios['cases']" :key="portfolio.id">
+          <router-link class="text-decoration-none" :to="{name: 'portfolios', hash: `#${portfolio.id}`}">
+            {{portfolio.name}}
+          </router-link>
+        </li>
+      </ul>
     </exp-item>
     <exp-item title="暑期實習 @ EZTABLE" from="2014-07" to="2014-08">
       <p>
@@ -133,6 +142,16 @@
       <p>
         除了工讀，在就學期間也參與學生會，集結校內資訊同好組成小社群，一起開發網站，包括學生會官網、學權申訴系統、海報欄位管理系統、電競賽官方網站。並將資訊部門從單純秘書處下的一個職位，爭取成為一個正式部門，讓小社群的有志同好能夠一展長才，並且在編寫程式之餘，學習經營人際關係，熟悉行政流程、應對議會諮詢。之後也將這個小社群擴散出去，將資訊社復社，並舉辦多場資訊教育相關課程與講座，和這群同好為學校建立起一個資訊學習的綠洲。
       </p>
+      <p>
+        這時期參與的專案與相關作品：
+      </p>
+      <ul>
+        <li v-for="portfolio in portfolios['nchu']" :key="portfolio.id">
+          <router-link class="text-decoration-none" :to="{name: 'portfolios', hash: `#${portfolio.id}`}">
+            {{portfolio.name}}
+          </router-link>
+        </li>
+      </ul>
     </exp-item>
   </section>
 </template>
@@ -144,6 +163,82 @@ export default {
   name: 'cv',
   components: {
     ExpItem
+  },
+  data () {
+    return {
+      portfolios: {
+        cases: [
+          {
+            id: 'publication-ISBN-9789864767946',
+            name: '《白話深度學習與 TensorFlow》'
+          },
+          {
+            id: 'publication-ISBN-9789864764877',
+            name: '《第一次用Docker就上手》'
+          },
+          {
+            id: 'web-project-808',
+            name: '專案 808'
+          },
+          {
+            id: 'web-meder-book',
+            name: 'Facebook 塗鴉牆解析再製程式'
+          },
+          {
+            id: 'web-ncyu-life',
+            name: '嘉義大學自殺防治網站・安心在嘉'
+          },
+          {
+            id: 'web-ics2015',
+            name: '論文投稿與審核系統'
+          },
+          {
+            id: 'utility-m2isocket',
+            name: 'M2I Socket'
+          }
+        ],
+        ncu: [
+          {
+            id: 'app-korat',
+            name: '錄製重播測試工具：KORAT'
+          },
+          {
+            id: 'web-nine-grids-judge',
+            name: '九宮格審題系統'
+          }
+        ],
+        nchu: [
+          {
+            id: 'web-business-statics-system',
+            name: '興大圖書館・業務統計系統'
+          },
+          {
+            id: 'web-book-search-system',
+            name: '興大圖書館・尋書系統'
+          },
+          {
+            id: 'web-outdoor-gate-system',
+            name: '興大圖書館・校外人士門禁系統'
+          },
+          {
+            id: 'web-room-borrow-system',
+            name: '興大圖書館・研究小間、讀者討論室借用系統'
+          },
+          {
+            id: 'web-board-manger-system',
+            name: '興大學生會・海報張貼管理系統'
+          },
+          {
+            id: 'web-appeal-management-system',
+            name: '興大學生會・學權申訴系統'
+          },
+          {
+            id: 'web-nchusg-official',
+            name: '興大學生會・官方網站'
+          }
+        ]
+      }
+    }
   }
 }
 </script>
