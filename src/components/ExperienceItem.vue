@@ -29,7 +29,7 @@
             {{subtitle}}
           </small>
         </h4>
-        <div :class="[{ 'd-none': isHidden, 'headline-text': isHeadlines }]">
+        <div :class="[{ 'd-none': isHidden }]">
           <slot></slot>
         </div>
       </div>
@@ -116,7 +116,4 @@ export default {
   color: #c04851;
 }
 
-.headline-text {
-  color: #592126;
-}
 </style>
