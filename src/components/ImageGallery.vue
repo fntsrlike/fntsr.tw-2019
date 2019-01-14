@@ -13,7 +13,7 @@ export default {
   props: {
     images: {
       type: Array,
-      default: []
+      default: () => []
     }
   },
   components: {
