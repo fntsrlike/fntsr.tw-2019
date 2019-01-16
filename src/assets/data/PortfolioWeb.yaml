@@ -134,7 +134,7 @@
     - web_ncyu_3.jpg
     - web_ncyu_4.jpg
 
-- id: ics2015
+- id: ics-2015-thesis
   name: "學術年會論文投稿與審核系統"
   responsibility: 獨立開發
   date: "2015-07-24"
@@ -176,7 +176,7 @@
     - "web_nine_grids_3.jpg"
     - "web_nine_grids_4.jpg"
 
-- id: business-statics-system
+- id: nchulib-business-statics-system
   name: 興大圖書館・業務統計系統
   responsibility: 獨立開發
   date: "2013"
@@ -193,7 +193,7 @@
   screenshots:
     - "web_lib_statistic_1.jpg"
 
-- id: book-search-system
+- id: nchulib-book-searching-system
   name: 興大圖書館・尋書系統
   responsibility: 獨立開發、重構既有專案
   date: "2013"
@@ -209,7 +209,7 @@
   screenshots: []
 
 
-- id: board-manger-system
+- id: nchusg-board-manger-system
   name: 興大學生會・海報張貼管理系統
   responsibility: 獨立開發
   date: "2012"
@@ -228,7 +228,7 @@
   screenshots:
     - "web_sg_boards_1.jpg"
 
-- id: appeal-management-system
+- id: nchusg-appeal-management-system
   name: 興大學生會・學權申訴系統
   responsibility: 重製舊系統
   date: "2012"
@@ -248,7 +248,7 @@
   screenshots:
     - "web_sg_appeal_1.jpg"
 
-- id: nchusg-official
+- id: nchusg-official-website
   name: 興大學生會・官方網站
   responsibility: 維護既有網站
   date: "2012"
@@ -267,7 +267,7 @@
   screenshots:
     - "web_sg_website_1.jpg"
 
-- id: outdoor-gate-system
+- id: nchulib-access-control-system
   name: 興大圖書館・校外人士門禁系統
   responsibility: 新增、修改功能
   date: "2012"
@@ -281,7 +281,7 @@
     - "這是本人第二個專案，主要是修改校外人士門禁系統的流程，加入必須同意使用者條款才能申請換證的程序。"
   screenshots: []
 
-- id: room-borrow-system
+- id: nchulib-room-booking-system
   name: 興大圖書館・研究小間、讀者討論室借用系統
   responsibility: 新增、修改功能
   date: "2012"
