@@ -64,7 +64,7 @@
         若地點與工作模式若是需要緊密與團隊合作，會比較偏好在台中工作。若是比較偏向個人開發的職缺，會希望能以遠端工作為主，並能接受定期去公司開重要會議。
       </p>
       <p>
-        對於我過往的工作經歷，可以參見本站的<router-link to="/cv"><ruby>履歷<rt>CV</rt></ruby></router-link>頁面；或是來信 work@fntsr.tw 索取較為正式的<ruby>簡歷<rt>résumé</rt></ruby>檔案。
+        對於我過往的工作經歷，可以參見本站的<router-link to="/cv"><ruby>履歷<rt>CV</rt></ruby></router-link>頁面；或是下載<a href="https://www.dropbox.com/s/fh5kn7quccbhm0d/Resume2019_ScrumMaster.pdf?dl=1"><ruby>簡歷<rt>résumé</rt></ruby>（ScrumMaster）</a>檔案。若有興趣認識、合作，可以來信 work@fntsr.tw 聯絡。
       </p>
     </article>
   </section>
