@@ -37,7 +37,7 @@
           <footer class="text-center text-muted py-5">
             <a class="text-reset text-decoration-none" href="https://github.com/fntsrlike/fntsr.tw-2019" target="_blank" title="Github Repositroy">
               <time datetime="2019-01-14">
-                <small>最後更新：2019/01/14</small>
+                <small>最後更新：2019/01/15</small>
               </time>
             </a>
           </footer>
