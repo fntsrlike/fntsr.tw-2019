@@ -2,7 +2,7 @@
   <section>
     <h2 class="d-none d-print-block text-center">履歷</h2>
     <exp-item title="享萊股份有限公司" subtitle="ScrumMaster" from="2017-12" to="2018-12"
-      anchorPath="cv" anchor-id="cv-sharelike">
+      anchorPath="cv" anchor-id="cv-sharelike" :isHeadlines="true">
       <p>
         在職期間進行了約 10 次敏捷主題的內部分享，讓團隊能暸解敏捷精神，而不拘泥於形式。並主持過 13 次回顧、12 次檢視、11 次規劃會議，和團隊執行了約 16 次衝刺，並一起努力做出了以下改變：
       </p>

@@ -22,10 +22,10 @@
             <font-awesome-icon :icon="['fas', 'plus']" v-if="isHidden"/>
             <font-awesome-icon :icon="['fas', 'minus']" v-if="!isHidden"/>
           </div>
-          <span :class="{'headline-title': isHeadlines}" >
+          <span>
             {{title}}
           </span>
-          <small class="pt-2 d-block " :class="isHeadlines ? 'headline-subtitle' : 'text-info'" v-if="subtitle != ''">
+          <small class="pt-2 d-block text-info'" v-if="subtitle != ''">
             {{subtitle}}
           </small>
         </h4>
