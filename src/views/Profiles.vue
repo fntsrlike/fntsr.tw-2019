@@ -38,7 +38,7 @@
       </p>
       <p>
         目前以程式設計師為業，並聚焦在編寫網頁程式；<br/>
-        亦曾擔任 ScrumMaster，逐步為團隊導入敏捷開發以及 Scrum 框架。<br/>
+        亦曾擔任 Scrum Master，逐步為團隊導入敏捷開發以及 Scrum 框架。<br/>
       </p>
 
     </article>
@@ -48,14 +48,14 @@
           求職
         </span>
         <small class="pt-2 d-block">
-          ScrumMaster、程式設計師
+          Scrum Master、程式設計師
         </small>
       </h4>
       <p>
-        我是個有七年程式開發經驗的程式設計師，也是個有成功為團隊導入敏捷文化與 Scrum 經驗的 ScrumMaster，日前於 <router-link :to="{name: 'achievements', hash: '#it-iron-2019'}">2019 年 iT 邦幫忙鐵人賽的 Agile 主題中獲得冠軍</router-link>，現在正在尋找下一份職缺。
+        我是個有七年程式開發經驗的程式設計師，也是個有成功為團隊導入敏捷文化與 Scrum 經驗的 Scrum Master，日前於 <router-link :to="{name: 'achievements', hash: '#it-iron-2019'}">2019 年 iT 邦幫忙鐵人賽的 Agile 主題中獲得冠軍</router-link>，現在正在尋找下一份職缺。
       </p>
       <p>
-        下一份工作希望能延續 ScrumMaster 的經驗，繼續引導團隊，並和團隊一起成長。或是擔任 ScrumMaster，或是繼續擔任程式設計師，但是能有一群願意持續成長、進步的夥伴，和他們分享適合團隊當前文化的敏捷經驗與知識。也因為期望會和團隊夥伴有頻繁互動，希望面試的時候也能和團隊成員交流，暸解彼此的價值觀。
+        下一份工作希望能延續 Scrum Master 的經驗，繼續引導團隊，並和團隊一起成長。或是擔任 Scrum Master，或是繼續擔任程式設計師，但是能有一群願意持續成長、進步的夥伴，和他們分享適合團隊當前文化的敏捷經驗與知識。也因為期望會和團隊夥伴有頻繁互動，希望面試的時候也能和團隊成員交流，暸解彼此的價值觀。
       </p>
       <p>
         在程式開發上，主要著重在網頁程式開發，並且以涉獵 PHP, Ruby, JavaScript (Node.js, Vue.js) 為主，在開發上傾向繼續深耕這些技術。另外，也有以 C# 進行視窗程式開發的經驗，並對於 C# 的相關專案或職缺也有興趣。
