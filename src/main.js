@@ -4,7 +4,7 @@ import router from './router'
 import VueScrollTo from 'vue-scrollto'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faWordpress } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWordpress, faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(
@@ -12,7 +12,9 @@ library.add(
   faPlus,
   faMinus,
   faGithub,
-  faWordpress
+  faWordpress,
+  faFacebookSquare,
+  faLinkedin
 )
 
 Vue.use(VueScrollTo)

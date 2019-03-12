@@ -21,6 +21,16 @@
               </a>
             </li>
             <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/fntsrlike/" target="_blank">
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/fntsr" target="_blank">
+                <font-awesome-icon :icon="['fab', 'facebook-square']" />
+              </a>
+            </li>
+            <li class="list-inline-item">
               <a href="mailto:work@fntsr.tw" target="_blank">
                 <font-awesome-icon :icon="['fas', 'envelope']" />
               </a>
