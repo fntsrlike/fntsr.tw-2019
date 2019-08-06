@@ -47,8 +47,8 @@
         現實中的朋友多暱稱我為<u><ruby>月湖<rt>Yuehu</rt></ruby></u>。<br/>
       </p>
       <p>
-        目前以程式設計師為業，並聚焦在編寫網頁程式；<br/>
-        亦曾擔任 Scrum Master，逐步為團隊導入敏捷開發以及 Scrum 框架。<br/>
+        目前以 Scrum Master 為業，任職於新加坡商鈦坦科技；<br/>
+        崇尚敏捷開發，對網路應用程式開發的技術領域也有涉獵。<br/>
       </p>
     </article>
   </section>
